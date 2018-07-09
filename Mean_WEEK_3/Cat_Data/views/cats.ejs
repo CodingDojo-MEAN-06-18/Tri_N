@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats</title>
+</head>
+<body>
+    <h2>Checks out these Cats right MEOW!</h2>
+        <% for (var cat in cats) { %>
+            <h3><%= cats[cat].name %></h3>
+            <a href = "/cats/<%= cats[cat].name %>"><img src= "<%= cats[cat].source %>"></a> 
+            <% }
+        %>
+</body>
+</html>
